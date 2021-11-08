@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "page/component/login/login",
+    "page/component/zhuce/zhuce",
+    "page/component/index",
+    "page/component/category/category",
+    "page/component/cart/cart",
+    "page/component/user/user",
+    "page/component/address/address",
+    "page/component/orders/orders",
+    "page/component/details/details",
+    "page/component/list/list",
+    "page/component/search/search"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "蔬菜商城",
+    "navigationBarBackgroundColor": "#BED742",
+    "backgroundColor": "#eeeeee",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#b7b7b7",
+    "selectedColor": "#BED742",
+    "borderStyle": "white",
+    "backgroundColor": "#f5f5f5",
+    "list": [
+      {
+        "pagePath": "page/component/index",
+        "iconPath": "image/buttom_icon_1.png",
+        "selectedIconPath": "image/buttom_icon_selected_1.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "page/component/category/category",
+        "iconPath": "image/buttom_icon_2.png",
+        "selectedIconPath": "image/buttom_icon_selected_2.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "page/component/cart/cart",
+        "iconPath": "image/buttom_icon_3.png",
+        "selectedIconPath": "image/buttom_icon_selected_3.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "page/component/user/user",
+        "iconPath": "image/buttom_icon_4.png",
+        "selectedIconPath": "image/buttom_icon_selected_4.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}

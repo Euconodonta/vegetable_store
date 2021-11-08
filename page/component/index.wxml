@@ -1,0 +1,90 @@
+<view class="main" >
+    <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" width="100%"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="search">
+        <navigator url="search/search">
+            <view class="search-text">
+                <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+                 搜 索
+            </view>
+        </navigator>
+    </view>
+    <view class="selected">
+        <view class="select-title"><text>精选主题</text></view>
+        <view class="select-top">
+            <view class="select-top-small" >
+                <!-- <navigator url="list/list"> -->
+                    <image src="/image/theme_1.png" bindtap="golist1"data-type="1"></image>
+                <!-- </navigator> -->
+            </view>
+            <view class="select-top-small">
+                <navigator url="list/list">
+                    <image src="/image/theme_2.png"  bindtap="golist1"data-type="2"></image>
+                </navigator>
+            </view>
+        </view>
+        <view class="select-bottom">
+            <navigator url="list/list">
+                <image src="/image/theme_3.png" bindtap="golist1"data-type="3"></image>
+            </navigator>
+        </view>
+    </view>
+    <view class="newest" >
+        <view class="newest-title"><text>最近新品</text></view>
+        <view class="newest-box">
+            <view class="newest-list" wx:for="{{list}}" bindtap="goDetail" data-id="{{item._id}}"> 
+                    <image src="{{item.image}}"></image>
+                    <view class="newest-text"><text>{{item.name}}</text></view>
+                    <view class="newest-text"><text>￥{{item.price}}/{{item.guige}}</text></view>
+                <!-- </navigator> -->
+            </view>
+            <!-- <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/image/qincai.png"></image>
+                    <view class="newest-text"><text>芹菜</text></view>
+                    <view class="newest-text"><text>￥ 0.02/500g</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/image/dabaicai.png"></image>
+                    <view class="newest-text"><text>大白菜</text></view>
+                    <view class="newest-text"><text>￥ 0.03/500g</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/image/youmaicai.png"></image>
+                    <view class="newest-text"><text>油麦菜</text></view>
+                    <view class="newest-text"><text>￥ 0.01/500g</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/image/donggua.png"></image>
+                    <view class="newest-text"><text>冬瓜</text></view>
+                    <view class="newest-text"><text>￥ 0.02/500g</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/image/xihongshi.png"></image>
+                    <view class="newest-text"><text>西红柿</text></view>
+                    <view class="newest-text"><text>￥ 0.03/500g</text></view>
+                </navigator>
+            </view>
+            <view class="newest-list">
+                <navigator url="details/details">
+                    <image src="/image/huanggua.png"></image>
+                    <view class="newest-text"><text>黄瓜</text></view>
+                    <view class="newest-text"><text>￥ 0.01/500g</text></view>
+                </navigator>
+            </view> -->
+        </view>
+    </view>
+</view>

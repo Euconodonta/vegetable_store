@@ -1,0 +1,29 @@
+<view class="main">
+    <view class="banner">
+        <image src="/image/yangsheng.png"></image>
+    </view>
+
+    <view class="list-box">
+        <view class="newest-list" wx:for="{{list}}" bindtap="goDetail" data-id="{{item._id}}">
+            <!-- <navigator url="../details/details"> -->
+                <image src="{{item.image}}"></image>
+                <view class="newest-text"><text>{{item.name}}</text></view>
+                <view class="newest-text"><text>￥{{item.price}}</text></view>
+            <!-- </navigator> -->
+        </view>
+        <!-- <view class="newest-list">
+            <navigator url="../details/details">
+                <image src="/image/qincai.png"></image>
+                <view class="newest-text"><text>芹菜</text></view>
+                <view class="newest-text"><text>￥ 0.02/500g</text></view>
+            </navigator>
+        </view>
+        <view class="newest-list">
+            <navigator url="../details/details">
+                <image src="/image/donggua.png"></image>
+                <view class="newest-text"><text>冬瓜</text></view>
+                <view class="newest-text"><text>￥ 0.03/500g</text></view>
+            </navigator>
+        </view> -->
+    </view>
+</view>

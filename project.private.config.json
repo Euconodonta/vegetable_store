@@ -1,0 +1,36 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "详情页",
+                    "pathName": "page/component/details/details",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "zhece",
+                    "pathName": "page/component/zhuce/zhuce",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "搜索",
+                    "pathName": "page/component/search/search",
+                    "query": "",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}
