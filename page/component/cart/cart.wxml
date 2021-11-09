@@ -9,7 +9,7 @@
                 <text class="cart-pro-price">￥{{item.price}}</text>
                 <view class="cart-count-box">
                     <text class="cart-count-down" bi
-                    ndtap="minusCount" data-obj="{{obj}}" data-index="{{index}}" data-id="{{item.id}}">-</text>
+                    ndtap="minusCount" data-obj="{{obj}}" data-index="{{index}}" bindtap="minusCount" data-id="{{item.id}}">-</text>
                     <text class="cart-count-num">{{item.num}}</text>
                     <text class="cart-count-add" bindtap="addCount" data-index="{{index}}" data-id="{{item.id}}">+</text>
                 </view>

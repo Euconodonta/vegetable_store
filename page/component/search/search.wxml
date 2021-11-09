@@ -31,7 +31,7 @@
                             <text>{{item.title}}</text>
                         </view>
                         <view class="result-text">
-                            <text>￥ {{item.price}}</text>
+                            <text>￥ {{item.price}}/{{item.guige}}</text>
                         </view>
                     <!-- </navigator> -->
                 </view>

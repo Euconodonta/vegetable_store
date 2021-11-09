@@ -184,9 +184,7 @@ console.log(this.data.carts);
     const id= e.currentTarget.dataset.id;
     let carts = this.data.carts;
     let num = carts[index].num;
-    if(num <= 1){
-      return false;
-    }
+    if(num> 1){
     num = num - 1;
     carts[index].num = num;
    this.change(id,num-1)
@@ -194,6 +192,7 @@ console.log(this.data.carts);
       carts: carts
     });
     this.getTotalPrice();
+  }
   },
 //加减事件
 order(){
